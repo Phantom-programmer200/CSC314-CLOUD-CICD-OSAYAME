@@ -3,7 +3,9 @@ const app = express();
 const port = 8080;
 
 app.get("/", (req, res) =>
-  res.send(" this is CSS 314 cloud computing DEVOPS ; CI-CD PIPELINE STEP 1 !")
+  res.send(
+    " THIS IS CSC 314 CLOUD COMPUTING DEVOPS; CI-CD PIPELINE CREATED WITH AWS. THIS PAGE INDICATES SUCCESS. EKHATOR OSAYAME.VUG/CSC/21/5332"
+  )
 );
 
 app.listen(port);
