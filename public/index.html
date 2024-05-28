@@ -7,14 +7,30 @@
     <style>
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
         margin: 0;
-        background: url("https://images.unsplash.com/photo-1529245019870-59b6f269a648?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHBheW1lbnR8ZW58MHx8fHwxNjE4MDY1NzQ0&ixlib=rb-1.2.1&q=80&w=1080")
-          no-repeat center center fixed;
+        background: linear-gradient(135deg, #007bff, #6c757d);
+
         background-size: cover;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 123, 255, 0.9);
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
       }
 
       .container {
@@ -24,6 +40,7 @@
         border-radius: 10px;
         max-width: 400px;
         width: 100%;
+        margin: 2rem auto;
         animation: fadeIn 1s ease-in-out;
       }
 
@@ -98,9 +115,48 @@
         color: #dc3545;
         margin-top: 1rem;
       }
+
+      .contact-us {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+        margin: 2rem auto;
+      }
+
+      .contact-us h2 {
+        text-align: center;
+        color: #343a40;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      .contact-us p {
+        text-align: center;
+        color: #495057;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .contact-us a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .contact-us a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
     <div class="container">
       <h1>NACOSS Dues Payment</h1>
       <form id="paymentForm" action="https://payment-gateway-url" method="post">
@@ -126,6 +182,14 @@
       <div class="error-message" id="errorMessage">
         Payment Failed. Please try again.
       </div>
+    </div>
+
+    <div class="contact-us">
+      <h2>Contact Us</h2>
+      <p>Have any questions? We'd love to hear from you!</p>
+      <p>Email: <a href="mailto:contact@nacoss.org">contact@nacoss.org</a></p>
+      <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+      <p>Address: Bwari, Veritas University Campus, Abuja, Nigeria</p>
     </div>
 
     <script>
